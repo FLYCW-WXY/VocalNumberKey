@@ -195,7 +195,7 @@ namespace vocalkey
             Random random = new Random();
             string FileName = path.ToString();
             string TrackName = random.Next().ToString();
-            mciSendString("open \"" + FileName + "\" type mpegvideo alias " + TrackName, null, 0, IntPtr.Zero);
+            mciSendString("open \"" + FileName + "\" type waveaudio alias " + TrackName, null, 0, IntPtr.Zero);
             mciSendString("play " + TrackName, null, 0, IntPtr.Zero);
             Thread.Sleep(2000);
             mciSendString("stop " + TrackName, null, 0, IntPtr.Zero);
