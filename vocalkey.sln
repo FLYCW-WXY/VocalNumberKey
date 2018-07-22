@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vocalkey", "vocalkey\vocalkey.csproj", "{BC720CD2-FF57-46BA-B1F3-B9921B4511D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC720CD2-FF57-46BA-B1F3-B9921B4511D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC720CD2-FF57-46BA-B1F3-B9921B4511D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC720CD2-FF57-46BA-B1F3-B9921B4511D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC720CD2-FF57-46BA-B1F3-B9921B4511D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3700A15-1EB8-43EC-BE8D-D17442D31CB8}
+	EndGlobalSection
+EndGlobal
