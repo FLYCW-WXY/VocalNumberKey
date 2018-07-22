@@ -43,18 +43,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 10F);
-            this.label1.Location = new System.Drawing.Point(130, 16);
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(142, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(301, 80);
+            this.label1.Size = new System.Drawing.Size(288, 85);
             this.label1.TabIndex = 1;
-            this.label1.Text = "FLY Vocal Number Key\r\nVer 1.0.5.18072201\r\nProgrammed by Edward Wang\r\nFLY Studio ©" +
-    "2011-2018 All Rights Reversed.";
+            this.label1.Text = "FLY Vocal Number Key\r\nVer 1.0.5.18072201\r\nProgrammed by Edward Wang\r\nLicensed und" +
+    "er GNU General Public License v3.0\r\nFLY Studio ©2011-2018 All Rights Reversed.";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::vocalkey.Properties.Resources.vnklogo;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(31, 10);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(92, 89);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -73,7 +73,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(344, 112);
+            this.button1.Location = new System.Drawing.Point(363, 112);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
@@ -84,7 +84,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(288, 117);
+            this.linkLabel1.Location = new System.Drawing.Point(299, 117);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(41, 12);
             this.linkLabel1.TabIndex = 4;
@@ -95,7 +95,7 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(222, 117);
+            this.linkLabel2.Location = new System.Drawing.Point(224, 117);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(47, 12);
             this.linkLabel2.TabIndex = 4;
@@ -106,7 +106,7 @@
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(150, 117);
+            this.linkLabel3.Location = new System.Drawing.Point(143, 117);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(53, 12);
             this.linkLabel3.TabIndex = 4;
@@ -118,7 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 147);
+            this.ClientSize = new System.Drawing.Size(456, 147);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
