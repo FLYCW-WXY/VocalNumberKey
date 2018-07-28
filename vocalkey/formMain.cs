@@ -180,6 +180,9 @@ namespace vocalkey
                 case (int)Keys.D0:
                     if (checkBoxNum0.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\0.wav"); };
                     break;
+                case 190:
+                    if (checkBoxNum0.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\dot.wav"); };
+                    break;
             }
 
         }
@@ -218,7 +221,7 @@ namespace vocalkey
             checkBoxNum8.Checked = (((XmlElement)(xml.GetElementsByTagName("VocalKeys")[0])).GetAttribute("n8").ToString()) == "true" ? true : false;
             checkBoxNum9.Checked = (((XmlElement)(xml.GetElementsByTagName("VocalKeys")[0])).GetAttribute("n9").ToString()) == "true" ? true : false;
             checkBoxDot.Checked = (((XmlElement)(xml.GetElementsByTagName("VocalKeys")[0])).GetAttribute("Dot").ToString()) == "true" ? true : false;
-            checkBoxChineseAcent.Checked = (((XmlElement)(xml.GetElementsByTagName("Voice")[0])).GetAttribute("ChineseAcent").ToString()) == "true" ? true : false;
+            checkBoxChineseAcent.Checked = (((XmlElement)(xml.GetElementsByTagName("Voice")[0])).GetAttribute("ChineseAccent").ToString()) == "true" ? true : false;
             voicePackName = ((XmlElement)(xml.GetElementsByTagName("Voice")[0])).GetAttribute("PackName").ToString();
         }
         private void saveConfig()
@@ -231,7 +234,7 @@ namespace vocalkey
 
             XmlElement voice = xml.CreateElement("Voice");
             voice.SetAttribute("PackName", voicePackName);
-            voice.SetAttribute("ChineseAcent", checkBoxChineseAcent.Checked == true ? "true" : "false");
+            voice.SetAttribute("ChineseAccent", checkBoxChineseAcent.Checked == true ? "true" : "false");
             Config.AppendChild(voice);
 
             XmlElement vocalkeys = xml.CreateElement("VocalKeys");

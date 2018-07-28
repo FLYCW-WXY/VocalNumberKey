@@ -95,7 +95,7 @@
             // 
             this.buttonSwitch.Location = new System.Drawing.Point(121, 21);
             this.buttonSwitch.Name = "buttonSwitch";
-            this.buttonSwitch.Size = new System.Drawing.Size(85, 29);
+            this.buttonSwitch.Size = new System.Drawing.Size(85, 30);
             this.buttonSwitch.TabIndex = 1;
             this.buttonSwitch.Text = "启用/禁用";
             this.buttonSwitch.UseVisualStyleBackColor = true;
@@ -309,7 +309,7 @@
             // 
             this.labelStatus.AutoSize = true;
             this.labelStatus.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelStatus.Location = new System.Drawing.Point(16, 25);
+            this.labelStatus.Location = new System.Drawing.Point(16, 26);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(93, 20);
             this.labelStatus.TabIndex = 2;
@@ -341,31 +341,32 @@
             this.toolStripMenuItem1,
             this.退出ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(149, 76);
+            this.contextMenuStrip1.ShowImageMargin = false;
+            this.contextMenuStrip1.Size = new System.Drawing.Size(156, 98);
             // 
             // 显示面板ToolStripMenuItem
             // 
             this.显示面板ToolStripMenuItem.Name = "显示面板ToolStripMenuItem";
-            this.显示面板ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.显示面板ToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.显示面板ToolStripMenuItem.Text = "显示面板";
             this.显示面板ToolStripMenuItem.Click += new System.EventHandler(this.显示面板ToolStripMenuItem_Click);
             // 
             // 禁用语音播报ToolStripMenuItem
             // 
             this.禁用语音播报ToolStripMenuItem.Name = "禁用语音播报ToolStripMenuItem";
-            this.禁用语音播报ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.禁用语音播报ToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.禁用语音播报ToolStripMenuItem.Text = "禁用语音播报";
             this.禁用语音播报ToolStripMenuItem.Click += new System.EventHandler(this.禁用语音播报ToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(145, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 6);
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
