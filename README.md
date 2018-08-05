@@ -1,6 +1,6 @@
 FLY Vocal Number Key
 =========
-[English Version](https://github.com/FLYCW-WXY/VocalNumberKey/blob/master/README_EN.md)[官方页面](https://wxyedward.cf/?p=180)
+[English Version](https://github.com/FLYCW-WXY/VocalNumberKey/blob/master/README_EN.md)<br>[官方页面](https://wxyedward.cf/?p=180)
 
 程序简介
 -----
