@@ -1,5 +1,6 @@
 FLY Vocal Number Key
 =========
+[中文版](https://github.com/FLYCW-WXY/VocalNumberKey)
 [Offical Site](https://wxyedward.cf/?p=180)
 
 Intro
