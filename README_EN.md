@@ -1,6 +1,6 @@
 FLY Vocal Number Key
 =========
-[中文版](https://github.com/FLYCW-WXY/VocalNumberKey)
+[中文版](https://github.com/FLYCW-WXY/VocalNumberKey)<br>
 [Offical Site](https://wxyedward.cf/?p=180)
 
 Intro
@@ -13,13 +13,13 @@ Functions
 
 * According to personal habits, you can choose whether to read "yi" as "yao".（for Chinese）
 
-* You can arbitrarily select the buttons of which you want to hear the voice.
+* You can arbitrarily select the keys of which you want to hear the voice.
 
 * This program has built-in Baidu Chinese female voice package and Google Chinese female voice package, and it supports the using of your own customized voice package.
 
 Snapshot
 --------
-![](https://s1.ax1x.com/2018/08/05/PDoJ5F.png)
+![](https://s2.ax1x.com/2019/02/07/ktgBkD.png)
 
 Environment
 --------
@@ -28,8 +28,13 @@ Need Microsoft .NET Framework 4.0
 
 History
 ---------
+Ver 1.1.5.19020701<br>
+-Added primary keypad and numeric keypad switches to control whether the number keys of the two keypads will let out voice prompts.<br>
+-Optimized some parts of the UI<br>
+-Fixed some known bugs.
+
 Ver 1.0.6.18072801<br>
-Fix some known bugs.
+Fixed some known bugs.
 
 Ver 1.0.5.18072201<br>
 The internal testing phase has finished, and the program is released.
