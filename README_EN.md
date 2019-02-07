@@ -28,7 +28,7 @@ Need Microsoft .NET Framework 4.0
 
 History
 ---------
-Ver 1.1.5.19020701<br>
+Ver 1.1.5.19020702<br>
 -Added primary keypad and numeric keypad switches to control whether the number keys of the two keypads will let out voice prompts.<br>
 -Optimized some parts of the UI<br>
 -Fixed some known bugs.
