@@ -59,6 +59,8 @@
             this.禁用语音播报ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkBoxMainkey = new System.Windows.Forms.CheckBox();
+            this.checkBoxNumkey = new System.Windows.Forms.CheckBox();
             this.groupBoxVoiceConfig.SuspendLayout();
             this.groupBoxKeyConfig.SuspendLayout();
             this.groupBoxStatus.SuspendLayout();
@@ -73,7 +75,7 @@
             // 
             // buttonAbout
             // 
-            this.buttonAbout.Location = new System.Drawing.Point(186, 185);
+            this.buttonAbout.Location = new System.Drawing.Point(208, 185);
             this.buttonAbout.Name = "buttonAbout";
             this.buttonAbout.Size = new System.Drawing.Size(65, 27);
             this.buttonAbout.TabIndex = 0;
@@ -83,7 +85,7 @@
             // 
             // buttonBackground
             // 
-            this.buttonBackground.Location = new System.Drawing.Point(257, 185);
+            this.buttonBackground.Location = new System.Drawing.Point(279, 185);
             this.buttonBackground.Name = "buttonBackground";
             this.buttonBackground.Size = new System.Drawing.Size(71, 27);
             this.buttonBackground.TabIndex = 0;
@@ -115,7 +117,7 @@
             this.groupBoxVoiceConfig.Controls.Add(this.checkBoxChineseAcent);
             this.groupBoxVoiceConfig.Controls.Add(this.comboBoxVoicePackSelect);
             this.groupBoxVoiceConfig.Controls.Add(this.label1);
-            this.groupBoxVoiceConfig.Location = new System.Drawing.Point(186, 12);
+            this.groupBoxVoiceConfig.Location = new System.Drawing.Point(208, 12);
             this.groupBoxVoiceConfig.Name = "groupBoxVoiceConfig";
             this.groupBoxVoiceConfig.Size = new System.Drawing.Size(219, 91);
             this.groupBoxVoiceConfig.TabIndex = 3;
@@ -144,6 +146,8 @@
             // 
             // groupBoxKeyConfig
             // 
+            this.groupBoxKeyConfig.Controls.Add(this.checkBoxNumkey);
+            this.groupBoxKeyConfig.Controls.Add(this.checkBoxMainkey);
             this.groupBoxKeyConfig.Controls.Add(this.checkBoxDot);
             this.groupBoxKeyConfig.Controls.Add(this.checkBoxNum0);
             this.groupBoxKeyConfig.Controls.Add(this.checkBoxNum3);
@@ -157,7 +161,7 @@
             this.groupBoxKeyConfig.Controls.Add(this.checkBoxNum7);
             this.groupBoxKeyConfig.Location = new System.Drawing.Point(12, 12);
             this.groupBoxKeyConfig.Name = "groupBoxKeyConfig";
-            this.groupBoxKeyConfig.Size = new System.Drawing.Size(162, 200);
+            this.groupBoxKeyConfig.Size = new System.Drawing.Size(185, 200);
             this.groupBoxKeyConfig.TabIndex = 4;
             this.groupBoxKeyConfig.TabStop = false;
             this.groupBoxKeyConfig.Text = "发声键位开关";
@@ -166,7 +170,7 @@
             // 
             this.checkBoxDot.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBoxDot.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBoxDot.Location = new System.Drawing.Point(105, 148);
+            this.checkBoxDot.Location = new System.Drawing.Point(137, 148);
             this.checkBoxDot.Name = "checkBoxDot";
             this.checkBoxDot.Size = new System.Drawing.Size(37, 35);
             this.checkBoxDot.TabIndex = 0;
@@ -178,7 +182,7 @@
             // 
             this.checkBoxNum0.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBoxNum0.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBoxNum0.Location = new System.Drawing.Point(19, 148);
+            this.checkBoxNum0.Location = new System.Drawing.Point(51, 148);
             this.checkBoxNum0.Name = "checkBoxNum0";
             this.checkBoxNum0.Size = new System.Drawing.Size(80, 35);
             this.checkBoxNum0.TabIndex = 0;
@@ -190,7 +194,7 @@
             // 
             this.checkBoxNum3.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBoxNum3.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBoxNum3.Location = new System.Drawing.Point(105, 107);
+            this.checkBoxNum3.Location = new System.Drawing.Point(137, 107);
             this.checkBoxNum3.Name = "checkBoxNum3";
             this.checkBoxNum3.Size = new System.Drawing.Size(37, 35);
             this.checkBoxNum3.TabIndex = 0;
@@ -202,7 +206,7 @@
             // 
             this.checkBoxNum2.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBoxNum2.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBoxNum2.Location = new System.Drawing.Point(62, 107);
+            this.checkBoxNum2.Location = new System.Drawing.Point(94, 107);
             this.checkBoxNum2.Name = "checkBoxNum2";
             this.checkBoxNum2.Size = new System.Drawing.Size(37, 35);
             this.checkBoxNum2.TabIndex = 0;
@@ -214,7 +218,7 @@
             // 
             this.checkBoxNum1.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBoxNum1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBoxNum1.Location = new System.Drawing.Point(19, 107);
+            this.checkBoxNum1.Location = new System.Drawing.Point(51, 107);
             this.checkBoxNum1.Name = "checkBoxNum1";
             this.checkBoxNum1.Size = new System.Drawing.Size(37, 35);
             this.checkBoxNum1.TabIndex = 0;
@@ -226,7 +230,7 @@
             // 
             this.checkBoxNum6.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBoxNum6.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBoxNum6.Location = new System.Drawing.Point(105, 66);
+            this.checkBoxNum6.Location = new System.Drawing.Point(137, 66);
             this.checkBoxNum6.Name = "checkBoxNum6";
             this.checkBoxNum6.Size = new System.Drawing.Size(37, 35);
             this.checkBoxNum6.TabIndex = 0;
@@ -238,7 +242,7 @@
             // 
             this.checkBoxNum5.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBoxNum5.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBoxNum5.Location = new System.Drawing.Point(62, 66);
+            this.checkBoxNum5.Location = new System.Drawing.Point(94, 66);
             this.checkBoxNum5.Name = "checkBoxNum5";
             this.checkBoxNum5.Size = new System.Drawing.Size(37, 35);
             this.checkBoxNum5.TabIndex = 0;
@@ -250,7 +254,7 @@
             // 
             this.checkBoxNum4.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBoxNum4.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBoxNum4.Location = new System.Drawing.Point(19, 66);
+            this.checkBoxNum4.Location = new System.Drawing.Point(51, 66);
             this.checkBoxNum4.Name = "checkBoxNum4";
             this.checkBoxNum4.Size = new System.Drawing.Size(37, 35);
             this.checkBoxNum4.TabIndex = 0;
@@ -262,7 +266,7 @@
             // 
             this.checkBoxNum9.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBoxNum9.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBoxNum9.Location = new System.Drawing.Point(105, 25);
+            this.checkBoxNum9.Location = new System.Drawing.Point(137, 25);
             this.checkBoxNum9.Name = "checkBoxNum9";
             this.checkBoxNum9.Size = new System.Drawing.Size(37, 35);
             this.checkBoxNum9.TabIndex = 0;
@@ -274,7 +278,7 @@
             // 
             this.checkBoxNum8.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBoxNum8.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBoxNum8.Location = new System.Drawing.Point(62, 25);
+            this.checkBoxNum8.Location = new System.Drawing.Point(94, 25);
             this.checkBoxNum8.Name = "checkBoxNum8";
             this.checkBoxNum8.Size = new System.Drawing.Size(37, 35);
             this.checkBoxNum8.TabIndex = 0;
@@ -286,7 +290,7 @@
             // 
             this.checkBoxNum7.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBoxNum7.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBoxNum7.Location = new System.Drawing.Point(19, 25);
+            this.checkBoxNum7.Location = new System.Drawing.Point(51, 25);
             this.checkBoxNum7.Name = "checkBoxNum7";
             this.checkBoxNum7.Size = new System.Drawing.Size(37, 35);
             this.checkBoxNum7.TabIndex = 0;
@@ -298,7 +302,7 @@
             // 
             this.groupBoxStatus.Controls.Add(this.labelStatus);
             this.groupBoxStatus.Controls.Add(this.buttonSwitch);
-            this.groupBoxStatus.Location = new System.Drawing.Point(186, 111);
+            this.groupBoxStatus.Location = new System.Drawing.Point(208, 111);
             this.groupBoxStatus.Name = "groupBoxStatus";
             this.groupBoxStatus.Size = new System.Drawing.Size(219, 66);
             this.groupBoxStatus.TabIndex = 5;
@@ -317,7 +321,7 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(334, 185);
+            this.buttonExit.Location = new System.Drawing.Point(356, 185);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(71, 27);
             this.buttonExit.TabIndex = 0;
@@ -342,39 +346,63 @@
             this.退出ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.ShowImageMargin = false;
-            this.contextMenuStrip1.Size = new System.Drawing.Size(156, 98);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(124, 76);
             // 
             // 显示面板ToolStripMenuItem
             // 
             this.显示面板ToolStripMenuItem.Name = "显示面板ToolStripMenuItem";
-            this.显示面板ToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.显示面板ToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.显示面板ToolStripMenuItem.Text = "显示面板";
             this.显示面板ToolStripMenuItem.Click += new System.EventHandler(this.显示面板ToolStripMenuItem_Click);
             // 
             // 禁用语音播报ToolStripMenuItem
             // 
             this.禁用语音播报ToolStripMenuItem.Name = "禁用语音播报ToolStripMenuItem";
-            this.禁用语音播报ToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.禁用语音播报ToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.禁用语音播报ToolStripMenuItem.Text = "禁用语音播报";
             this.禁用语音播报ToolStripMenuItem.Click += new System.EventHandler(this.禁用语音播报ToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(120, 6);
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
+            // 
+            // checkBoxMainkey
+            // 
+            this.checkBoxMainkey.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBoxMainkey.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBoxMainkey.Location = new System.Drawing.Point(11, 25);
+            this.checkBoxMainkey.Name = "checkBoxMainkey";
+            this.checkBoxMainkey.Size = new System.Drawing.Size(34, 76);
+            this.checkBoxMainkey.TabIndex = 1;
+            this.checkBoxMainkey.Text = "主键区";
+            this.checkBoxMainkey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBoxMainkey.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxNumkey
+            // 
+            this.checkBoxNumkey.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBoxNumkey.Font = new System.Drawing.Font("微软雅黑", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBoxNumkey.Location = new System.Drawing.Point(11, 107);
+            this.checkBoxNumkey.Name = "checkBoxNumkey";
+            this.checkBoxNumkey.Size = new System.Drawing.Size(34, 76);
+            this.checkBoxNumkey.TabIndex = 2;
+            this.checkBoxNumkey.Text = "数字键区";
+            this.checkBoxNumkey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBoxNumkey.UseVisualStyleBackColor = true;
             // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(417, 224);
+            this.ClientSize = new System.Drawing.Size(441, 224);
             this.Controls.Add(this.groupBoxStatus);
             this.Controls.Add(this.groupBoxKeyConfig);
             this.Controls.Add(this.groupBoxVoiceConfig);
@@ -431,6 +459,8 @@
         private System.Windows.Forms.ToolStripMenuItem 禁用语音播报ToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
+        private System.Windows.Forms.CheckBox checkBoxNumkey;
+        private System.Windows.Forms.CheckBox checkBoxMainkey;
     }
 }
 

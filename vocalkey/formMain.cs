@@ -95,94 +95,105 @@ namespace vocalkey
         }
         private void hook_KeyDown(object sender, KeyEventArgs e)
         {
-            switch (e.KeyValue)
+            if (checkBoxMainkey.Checked)
             {
-                case (int)Keys.NumPad1:
-                    if (checkBoxNum1.Checked)
-                    {
-                        if (checkBoxChineseAcent.Checked)
+                switch (e.KeyValue)
+                {
+                    case (int)Keys.D1:
+                        if (checkBoxNum1.Checked)
                         {
-                            playSound(currentDirectory + @"\voice\" + voicePackName + @"\yao.wav");
+                            if (checkBoxChineseAcent.Checked)
+                            {
+                                playSound(currentDirectory + @"\voice\" + voicePackName + @"\yao.wav");
+                            }
+                            else
+                            {
+                                playSound(currentDirectory + @"\voice\" + voicePackName + @"\1.wav");
+                            }
                         }
-                        else
+                        break;
+                    case (int)Keys.D2:
+                        if (checkBoxNum2.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\2.wav"); };
+                        break;
+                    case (int)Keys.D3:
+                        if (checkBoxNum3.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\3.wav"); };
+                        break;
+                    case (int)Keys.D4:
+                        if (checkBoxNum4.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\4.wav"); };
+                        break;
+                    case (int)Keys.D5:
+                        if (checkBoxNum5.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\5.wav"); };
+                        break;
+                    case (int)Keys.D6:
+                        if (checkBoxNum6.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\6.wav"); };
+                        break;
+                    case (int)Keys.D7:
+                        if (checkBoxNum7.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\7.wav"); };
+                        break;
+                    case (int)Keys.D8:
+                        if (checkBoxNum8.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\8.wav"); };
+                        break;
+                    case (int)Keys.D9:
+                        if (checkBoxNum9.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\9.wav"); };
+                        break;
+                    case (int)Keys.D0:
+                        if (checkBoxNum0.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\0.wav"); };
+                        break;
+                    case 190:
+                        if (checkBoxNum0.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\dot.wav"); };
+                        break;
+                }
+                
+           
+            }
+            if(checkBoxNumkey.Checked)
+            {
+                switch (e.KeyValue)
+                {
+                    case (int)Keys.NumPad1:
+                        if (checkBoxNum1.Checked)
                         {
-                            playSound(currentDirectory + @"\voice\" + voicePackName + @"\1.wav");
+                            if (checkBoxChineseAcent.Checked)
+                            {
+                                playSound(currentDirectory + @"\voice\" + voicePackName + @"\yao.wav");
+                            }
+                            else
+                            {
+                                playSound(currentDirectory + @"\voice\" + voicePackName + @"\1.wav");
+                            }
                         }
-                    }
-                    break;
-                case (int)Keys.NumPad2:
-                    if (checkBoxNum2.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\2.wav"); };
-                    break;
-                case (int)Keys.NumPad3:
-                    if (checkBoxNum3.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\3.wav"); };
-                    break;
-                case (int)Keys.NumPad4:
-                    if (checkBoxNum4.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\4.wav"); };
-                    break;
-                case (int)Keys.NumPad5:
-                    if (checkBoxNum5.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\5.wav"); };
-                    break;
-                case (int)Keys.NumPad6:
-                    if (checkBoxNum6.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\6.wav"); };
-                    break;
-                case (int)Keys.NumPad7:
-                    if (checkBoxNum7.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\7.wav"); };
-                    break;
-                case (int)Keys.NumPad8:
-                    if (checkBoxNum8.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\8.wav"); };
-                    break;
-                case (int)Keys.NumPad9:
-                    if (checkBoxNum9.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\9.wav"); };
-                    break;
-                case (int)Keys.NumPad0:
-                    if (checkBoxNum0.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\0.wav"); };
-                    break;
-                case (int)Keys.Decimal:
-                    if (checkBoxDot.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\dot.wav"); };
-                    break;
-                case (int)Keys.D1:
-                    if (checkBoxNum1.Checked)
-                    {
-                        if (checkBoxChineseAcent.Checked)
-                        {
-                            playSound(currentDirectory + @"\voice\" + voicePackName + @"\yao.wav");
-                        }
-                        else
-                        {
-                            playSound(currentDirectory + @"\voice\" + voicePackName + @"\1.wav");
-                        }
-                    }
-                    break;
-                case (int)Keys.D2:
-                    if (checkBoxNum2.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\2.wav"); };
-                    break;
-                case (int)Keys.D3:
-                    if (checkBoxNum3.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\3.wav"); };
-                    break;
-                case (int)Keys.D4:
-                    if (checkBoxNum4.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\4.wav"); };
-                    break;
-                case (int)Keys.D5:
-                    if (checkBoxNum5.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\5.wav"); };
-                    break;
-                case (int)Keys.D6:
-                    if (checkBoxNum6.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\6.wav"); };
-                    break;
-                case (int)Keys.D7:
-                    if (checkBoxNum7.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\7.wav"); };
-                    break;
-                case (int)Keys.D8:
-                    if (checkBoxNum8.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\8.wav"); };
-                    break;
-                case (int)Keys.D9:
-                    if (checkBoxNum9.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\9.wav"); };
-                    break;
-                case (int)Keys.D0:
-                    if (checkBoxNum0.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\0.wav"); };
-                    break;
-                case 190:
-                    if (checkBoxNum0.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\dot.wav"); };
-                    break;
+                        break;
+                    case (int)Keys.NumPad2:
+                        if (checkBoxNum2.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\2.wav"); };
+                        break;
+                    case (int)Keys.NumPad3:
+                        if (checkBoxNum3.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\3.wav"); };
+                        break;
+                    case (int)Keys.NumPad4:
+                        if (checkBoxNum4.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\4.wav"); };
+                        break;
+                    case (int)Keys.NumPad5:
+                        if (checkBoxNum5.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\5.wav"); };
+                        break;
+                    case (int)Keys.NumPad6:
+                        if (checkBoxNum6.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\6.wav"); };
+                        break;
+                    case (int)Keys.NumPad7:
+                        if (checkBoxNum7.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\7.wav"); };
+                        break;
+                    case (int)Keys.NumPad8:
+                        if (checkBoxNum8.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\8.wav"); };
+                        break;
+                    case (int)Keys.NumPad9:
+                        if (checkBoxNum9.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\9.wav"); };
+                        break;
+                    case (int)Keys.NumPad0:
+                        if (checkBoxNum0.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\0.wav"); };
+                        break;
+                    case (int)Keys.Decimal:
+                        if (checkBoxDot.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\dot.wav"); };
+                        break;
+                }
             }
 
         }
@@ -210,6 +221,8 @@ namespace vocalkey
         {
             XmlDocument xml = new XmlDocument();
             xml.Load("vnkConfig.xml");
+            checkBoxMainkey.Checked = (((XmlElement)(xml.GetElementsByTagName("VocalKeys")[0])).GetAttribute("Mainkey").ToString()) == "true" ? true : false;
+            checkBoxNumkey.Checked = (((XmlElement)(xml.GetElementsByTagName("VocalKeys")[0])).GetAttribute("Numkey").ToString()) == "true" ? true : false;
             checkBoxNum0.Checked = (((XmlElement)(xml.GetElementsByTagName("VocalKeys")[0])).GetAttribute("n0").ToString()) == "true" ? true : false;
             checkBoxNum1.Checked = (((XmlElement)(xml.GetElementsByTagName("VocalKeys")[0])).GetAttribute("n1").ToString()) == "true" ? true : false;
             checkBoxNum2.Checked = (((XmlElement)(xml.GetElementsByTagName("VocalKeys")[0])).GetAttribute("n2").ToString()) == "true" ? true : false;
@@ -238,6 +251,9 @@ namespace vocalkey
             Config.AppendChild(voice);
 
             XmlElement vocalkeys = xml.CreateElement("VocalKeys");
+            vocalkeys.SetAttribute("Mainkey", checkBoxMainkey.Checked == true ? "true" : "false");
+            vocalkeys.SetAttribute("Numkey", checkBoxNumkey.Checked == true ? "true" : "false");
+            vocalkeys.SetAttribute("n0", checkBoxNum0.Checked == true ? "true" : "false");
             vocalkeys.SetAttribute("n0", checkBoxNum0.Checked == true ? "true" : "false");
             vocalkeys.SetAttribute("n1", checkBoxNum1.Checked == true ? "true" : "false");
             vocalkeys.SetAttribute("n2", checkBoxNum2.Checked == true ? "true" : "false");
@@ -288,7 +304,7 @@ namespace vocalkey
         private void buttonBackground_Click(object sender, EventArgs e)
         {
             this.Hide();   //隐藏窗体
-            notifyIcon.ShowBalloonTip(1000, "FLY Vocal Number Key", "已最小化至系统托盘", ToolTipIcon.Info);
+            notifyIcon.ShowBalloonTip(1000, "已最小化至系统托盘", "程序将在后台运行", ToolTipIcon.Info);
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
@@ -313,7 +329,7 @@ namespace vocalkey
             {
 
                 this.Hide();   //隐藏窗体
-                notifyIcon.ShowBalloonTip(1000, "FLY Vocal Number Key", "已最小化至系统托盘", ToolTipIcon.Info);
+                notifyIcon.ShowBalloonTip(1000, "已最小化至系统托盘", "程序将在后台运行", ToolTipIcon.Info);
             }
         }
 
