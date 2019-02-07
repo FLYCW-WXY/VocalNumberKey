@@ -128,7 +128,7 @@
     <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;Config&gt;
   &lt;Voice PackName="百度中文女声" ChineseAcent="false" /&gt;
-  &lt;VocalKeys n0="true" n1="true" n2="true" n3="true" n4="true" n5="true" n6="true" n7="true" n8="true" n9="true" Dot="true" /&gt;
+  &lt;VocalKeys Mainkey="true" Numkey="true" n0="true" n1="true" n2="true" n3="true" n4="true" n5="true" n6="true" n7="true" n8="true" n9="true" Dot="true" /&gt;
 &lt;/Config&gt;</value>
   </data>
 </root>

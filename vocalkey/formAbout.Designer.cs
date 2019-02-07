@@ -48,7 +48,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(288, 85);
             this.label1.TabIndex = 1;
-            this.label1.Text = "FLY Vocal Number Key\r\nVer 1.1.5.19020701\r\nProgrammed by Edward Wang\r\nLicensed und" +
+            this.label1.Text = "FLY Vocal Number Key\r\nVer 1.1.5.19020702\r\nProgrammed by Edward Wang\r\nLicensed und" +
     "er GNU General Public License v3.0\r\nFLY Studio ©2011-2019 All Rights Reversed.";
             // 
             // pictureBox1

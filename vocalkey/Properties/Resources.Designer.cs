@@ -64,7 +64,7 @@ namespace vocalkey.Properties {
         ///   查找类似 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
         ///&lt;Config&gt;
         ///  &lt;Voice PackName=&quot;百度中文女声&quot; ChineseAcent=&quot;false&quot; /&gt;
-        ///  &lt;VocalKeys n0=&quot;true&quot; n1=&quot;true&quot; n2=&quot;true&quot; n3=&quot;true&quot; n4=&quot;true&quot; n5=&quot;true&quot; n6=&quot;true&quot; n7=&quot;true&quot; n8=&quot;true&quot; n9=&quot;true&quot; Dot=&quot;true&quot; /&gt;
+        ///  &lt;VocalKeys Mainkey=&quot;true&quot; Numkey=&quot;true&quot; n0=&quot;true&quot; n1=&quot;true&quot; n2=&quot;true&quot; n3=&quot;true&quot; n4=&quot;true&quot; n5=&quot;true&quot; n6=&quot;true&quot; n7=&quot;true&quot; n8=&quot;true&quot; n9=&quot;true&quot; Dot=&quot;true&quot; /&gt;
         ///&lt;/Config&gt; 的本地化字符串。
         /// </summary>
         internal static string defaultConfig {

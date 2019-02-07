@@ -140,7 +140,7 @@ namespace vocalkey
                         if (checkBoxNum0.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\0.wav"); };
                         break;
                     case 190:
-                        if (checkBoxNum0.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\dot.wav"); };
+                        if (checkBoxDot.Checked) { playSound(currentDirectory + @"\voice\" + voicePackName + @"\dot.wav"); };
                         break;
                 }
                 
@@ -344,7 +344,7 @@ namespace vocalkey
             if (isEnabled)
             {
                 labelStatus.Text = "语音播报禁用";
-                禁用语音播报ToolStripMenuItem.Text = "启用语音播报";
+                禁用语音播报ToolStripMenuItem.Checked = false;
                 timerReloadHook.Stop();
                 k_hook.Stop();
                 isEnabled = false;
@@ -352,7 +352,7 @@ namespace vocalkey
             else
             {
                 labelStatus.Text = "语音播报启用";
-                禁用语音播报ToolStripMenuItem.Text = "禁用语音播报";
+                禁用语音播报ToolStripMenuItem.Checked = true;
                 timerReloadHook.Start();
                 k_hook.Start();
                 isEnabled = true;

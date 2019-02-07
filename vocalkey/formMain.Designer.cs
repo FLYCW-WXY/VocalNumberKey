@@ -39,6 +39,8 @@
             this.checkBoxChineseAcent = new System.Windows.Forms.CheckBox();
             this.comboBoxVoicePackSelect = new System.Windows.Forms.ComboBox();
             this.groupBoxKeyConfig = new System.Windows.Forms.GroupBox();
+            this.checkBoxNumkey = new System.Windows.Forms.CheckBox();
+            this.checkBoxMainkey = new System.Windows.Forms.CheckBox();
             this.checkBoxDot = new System.Windows.Forms.CheckBox();
             this.checkBoxNum0 = new System.Windows.Forms.CheckBox();
             this.checkBoxNum3 = new System.Windows.Forms.CheckBox();
@@ -59,8 +61,7 @@
             this.禁用语音播报ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkBoxMainkey = new System.Windows.Forms.CheckBox();
-            this.checkBoxNumkey = new System.Windows.Forms.CheckBox();
+            this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBoxVoiceConfig.SuspendLayout();
             this.groupBoxKeyConfig.SuspendLayout();
             this.groupBoxStatus.SuspendLayout();
@@ -165,6 +166,30 @@
             this.groupBoxKeyConfig.TabIndex = 4;
             this.groupBoxKeyConfig.TabStop = false;
             this.groupBoxKeyConfig.Text = "发声键位开关";
+            // 
+            // checkBoxNumkey
+            // 
+            this.checkBoxNumkey.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBoxNumkey.Font = new System.Drawing.Font("微软雅黑", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBoxNumkey.Location = new System.Drawing.Point(11, 107);
+            this.checkBoxNumkey.Name = "checkBoxNumkey";
+            this.checkBoxNumkey.Size = new System.Drawing.Size(34, 76);
+            this.checkBoxNumkey.TabIndex = 2;
+            this.checkBoxNumkey.Text = "数字键区";
+            this.checkBoxNumkey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBoxNumkey.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMainkey
+            // 
+            this.checkBoxMainkey.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBoxMainkey.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBoxMainkey.Location = new System.Drawing.Point(11, 25);
+            this.checkBoxMainkey.Name = "checkBoxMainkey";
+            this.checkBoxMainkey.Size = new System.Drawing.Size(34, 76);
+            this.checkBoxMainkey.TabIndex = 1;
+            this.checkBoxMainkey.Text = "主键区";
+            this.checkBoxMainkey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBoxMainkey.UseVisualStyleBackColor = true;
             // 
             // checkBoxDot
             // 
@@ -340,63 +365,48 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.infoToolStripMenuItem,
             this.显示面板ToolStripMenuItem,
             this.禁用语音播报ToolStripMenuItem,
             this.toolStripMenuItem1,
             this.退出ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.ShowImageMargin = false;
-            this.contextMenuStrip1.Size = new System.Drawing.Size(124, 76);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(230, 120);
             // 
             // 显示面板ToolStripMenuItem
             // 
             this.显示面板ToolStripMenuItem.Name = "显示面板ToolStripMenuItem";
-            this.显示面板ToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
-            this.显示面板ToolStripMenuItem.Text = "显示面板";
+            this.显示面板ToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.显示面板ToolStripMenuItem.Text = "显示面板...";
             this.显示面板ToolStripMenuItem.Click += new System.EventHandler(this.显示面板ToolStripMenuItem_Click);
             // 
             // 禁用语音播报ToolStripMenuItem
             // 
+            this.禁用语音播报ToolStripMenuItem.Checked = true;
+            this.禁用语音播报ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.禁用语音播报ToolStripMenuItem.Name = "禁用语音播报ToolStripMenuItem";
-            this.禁用语音播报ToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
-            this.禁用语音播报ToolStripMenuItem.Text = "禁用语音播报";
+            this.禁用语音播报ToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.禁用语音播报ToolStripMenuItem.Text = "启用语音播报";
             this.禁用语音播报ToolStripMenuItem.Click += new System.EventHandler(this.禁用语音播报ToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(120, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(226, 6);
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
-            // checkBoxMainkey
+            // infoToolStripMenuItem
             // 
-            this.checkBoxMainkey.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBoxMainkey.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBoxMainkey.Location = new System.Drawing.Point(11, 25);
-            this.checkBoxMainkey.Name = "checkBoxMainkey";
-            this.checkBoxMainkey.Size = new System.Drawing.Size(34, 76);
-            this.checkBoxMainkey.TabIndex = 1;
-            this.checkBoxMainkey.Text = "主键区";
-            this.checkBoxMainkey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxMainkey.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxNumkey
-            // 
-            this.checkBoxNumkey.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBoxNumkey.Font = new System.Drawing.Font("微软雅黑", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBoxNumkey.Location = new System.Drawing.Point(11, 107);
-            this.checkBoxNumkey.Name = "checkBoxNumkey";
-            this.checkBoxNumkey.Size = new System.Drawing.Size(34, 76);
-            this.checkBoxNumkey.TabIndex = 2;
-            this.checkBoxNumkey.Text = "数字键区";
-            this.checkBoxNumkey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxNumkey.UseVisualStyleBackColor = true;
+            this.infoToolStripMenuItem.Enabled = false;
+            this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
+            this.infoToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.infoToolStripMenuItem.Text = "FLY Vocal Number Key 1.1";
             // 
             // formMain
             // 
@@ -461,6 +471,7 @@
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
         private System.Windows.Forms.CheckBox checkBoxNumkey;
         private System.Windows.Forms.CheckBox checkBoxMainkey;
+        private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
     }
 }
 
