@@ -76,10 +76,21 @@ namespace vocalkey
                 f2.Close();
             }
             loadConfig();
+            try
+            {
+                Directory.GetDirectories(currentDirectory + @"\voice");
+            }
+            catch
+            {
+                MessageBox.Show("语音包路径不存在，请将语音包放入与程序文件同目录下的voice目录", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                notifyIcon.Visible = false;
+                this.Close();
+            }
             string[] voicePackDirs = Directory.GetDirectories(currentDirectory + @"\voice");
             if (voicePackDirs.Length == 0)
             {
-                MessageBox.Show("未找到任何语音包", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("未找到任何语音包，请将语音包放入与程序文件同目录下的voice目录", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                notifyIcon.Visible = false;
                 this.Close();
             }
             ArrayList voicePacks = new ArrayList();
@@ -315,6 +326,7 @@ namespace vocalkey
         private void formMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             saveConfig();
+            notifyIcon.Visible = false;
         }
 
         private void notifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
